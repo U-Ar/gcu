@@ -1,0 +1,7 @@
+# This is the setting file of GCU. Don't edit except for the values of the parameters.
+4.3   # point of "優上"
+4.0   # point of "優"   
+3.0   # point of "良"
+2.0   # point of "可"
+0.0   # point of "不可"
+1     # 1 if you include courses whose "科目GP" is "*". If you don't want to include, set 0.
