@@ -43,3 +43,28 @@ python gcu.py
 5. type student id and password following the prompt 
 6. results will be shown
 
+## Setting
+
+The setting for calculating GPA can be changed with app/settings.txt.
+
+The parameters are following:
+- point of "優上" : default value is 4.3
+- point of "優" : default value is 4.0
+- point of "良" : default value is 3.0
+- point of "可" : default value is 2.0
+- point of "不可" : default value is 0.0
+- flag of including courses whose "科目GP" is "*" : in the default setting you include
+
+Don't add extra lines or remove spaces in settings.txt. Maybe becomes the cause of errors.
+
+If you want other complex settings, please contact me.
+Or I welcome your pull request.
+
+## Implementation
+
+The program is written in Python, and selenium is used to automatically manipulate a browser.
+
+In order to make it independent of the local environment, 
+both of the browser and the program are run in docker containers.
+
+They communicate on port 4444, so you should assure it's not used or change source codes.
